@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --bg-primary: #1E40AF;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+.rounded {
+    border-radius: 0.75rem !important;
+}
+
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 960px;
+}
+
+.project-thumbnail {
+    transition: 300ms all ease;
+}
+
+.fs-5 {
+    font-size: 1.125rem !important;
+}
+
+.project-thumbnail:hover {
+    filter: brightness(0.5);
+    transform: scale(0.99);
+}
+
+.bg-primary {
+    background: var(--bg-primary) !important;
+}
+
+.hr-secondary {
+    background-color: #6c757d;
+}
+
+/* ANIMATION ON LOAD */
+@keyframes animate {
+    0% {
+        transform: translatey(-5%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translatey(0);
+        opacity: 1;
+    }
+}
+
+.content {
+    animation: 500ms ease-out 0s 1 animate;
+}

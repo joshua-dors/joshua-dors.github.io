@@ -1,26 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&display=swap');
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: 'Epilogue', sans-serif;
-    background-color: black;
 }
 
 .rounded {
     border-radius: 1rem !important;
 }
 
-.text-secondary {
-    color: #838a8f !important;
-}
-
-.bg-dark {
-    background-color: rgba(255, 255, 255, 0.1) !important;
+.bg-light  {
+    background-color: rgba(0, 0, 0, 0.05) !important;
 }
 
 .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-    max-width: 960px;
+    max-width: 1040px;
 }
 
 .project-thumbnail {
@@ -45,11 +37,6 @@ body {
 
 .icon:hover {
     transform: scale(1.1);
-}
-
-.bg {
-    background-size: cover;
-    background-position: center;
 }
 
 /* ANIMATION ON LOAD */
